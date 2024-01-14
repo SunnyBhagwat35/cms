@@ -1,11 +1,4 @@
-# [Content Management System]
-
-[Your Project Description]
-
-## Table of Contents
-
-- [Introduction](#introduction)# [Content Management System]
-
+# Content Management System
 Built API for Content Management System
 
 ## Table of Contents
