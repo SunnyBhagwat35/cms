@@ -1,0 +1,26 @@
+[
+  {
+    "model": "main.cmsuser",
+    "pk": 1,
+    "fields": {
+      "email": "admin1@gmail.com",
+      "password": "pbkdf2_sha256$600000$yQZotLBNlVyeER378MoHbz$PzNraMUKDS2Yh62AACVyF+Q8XrD8AeSsLKK2zxvzD8M=",
+      "full_name": "Admin User 1",
+      "phone": "1234567890",
+      "is_staff": true,
+      "is_superuser": true
+    }
+  },
+  {
+    "model": "main.cmsuser",
+    "pk": 2,
+    "fields": {
+      "email": "admin2@gmail.com",
+      "password": "pbkdf2_sha256$600000$V4edokMNpraRVLRBvbRKgQ$39JXUKsDCj4k3yvm4sCWhzAMtEmFyfJPqzi7ikY80sE=",
+      "full_name": "Admin User 2",
+      "phone": "9876543210",
+      "is_staff": true,
+      "is_superuser": true
+    }
+  }
+]

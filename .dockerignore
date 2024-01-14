@@ -1,0 +1,7 @@
+.venv/
+.pytes_cache/
+.vscode/
+.coverage
+media/
+db.sqlite3
+

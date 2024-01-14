@@ -1,0 +1,16 @@
+asgiref
+backports.zoneinfo
+coverage
+Django
+django-filter
+djangorestframework
+exceptiongroup
+iniconfig
+packaging
+pluggy
+pytest
+pytest-cov
+pytz
+sqlparse
+tomli
+typing_extensions
