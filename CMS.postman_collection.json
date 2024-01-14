@@ -1,0 +1,436 @@
+{
+	"info": {
+		"_postman_id": "413f89b4-a9be-400f-a622-5f0620175b5b",
+		"name": "CMS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19485088"
+	},
+	"item": [
+		{
+			"name": "content",
+			"item": [
+				{
+					"name": "Search Content",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token c586799f4c295b9702fa75f4db657d3874726b6f",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Title of ",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "body",
+									"value": "adf afd adfa fas fas",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "summary",
+									"value": "sd sbfgdh tdg sg",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "category",
+									"value": "personal",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "doc",
+									"type": "file",
+									"src": [],
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/cms/search_content?query=edit",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"cms",
+								"search_content"
+							],
+							"query": [
+								{
+									"key": "query",
+									"value": "edit"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Content",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token c586799f4c295b9702fa75f4db657d3874726b6f",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Title of ",
+									"type": "text"
+								},
+								{
+									"key": "body",
+									"value": "adf afd adfa fas fas",
+									"type": "text"
+								},
+								{
+									"key": "summary",
+									"value": "sd sbfgdh tdg sg",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "personal",
+									"type": "text"
+								},
+								{
+									"key": "doc",
+									"type": "file",
+									"src": "/home/sunny/Desktop/thor.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/cms/create_content",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"cms",
+								"create_content"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Content",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 7d6b3398c15d5678c49e976819a047905ffe646a",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Edited Title",
+									"type": "text"
+								},
+								{
+									"key": "body",
+									"value": "adf afd adfa fas fas",
+									"type": "text"
+								},
+								{
+									"key": "summary",
+									"value": "sd sbfgdh tdg sg",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "personal",
+									"type": "text"
+								},
+								{
+									"key": "doc",
+									"type": "file",
+									"src": "/home/sunny/Desktop/rdj.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/cms/edit_content/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"cms",
+								"edit_content",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Content",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token c586799f4c295b9702fa75f4db657d3874726b6f",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Title of ",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "body",
+									"value": "adf afd adfa fas fas",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "summary",
+									"value": "sd sbfgdh tdg sg",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "category",
+									"value": "personal",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "doc",
+									"type": "file",
+									"src": [],
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/cms/delete_content/3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"cms",
+								"delete_content",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View content",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token c586799f4c295b9702fa75f4db657d3874726b6f",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Title of ",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "body",
+									"value": "adf afd adfa fas fas",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "summary",
+									"value": "sd sbfgdh tdg sg",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "category",
+									"value": "personal",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "doc",
+									"type": "file",
+									"src": [],
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/cms/view_content/4",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"cms",
+								"view_content",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "Login User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "sunny@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Sunny@1234",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/cms/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"cms",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "test112@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Test@1234",
+									"type": "text"
+								},
+								{
+									"key": "full_name",
+									"value": "test User",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "1234567891",
+									"type": "text"
+								},
+								{
+									"key": "pincode",
+									"value": "400603",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/cms/register",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"cms",
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

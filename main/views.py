@@ -20,11 +20,13 @@ from django.db.models import Q
 @api_view(['GET'])
 def apiOverview(request):
 	api_urls = {
-		'List':'/task-list/',
-		'Detail View':'/task-detail/<str:pk>/',
-		'Create':'/task-create/',
-		'Update':'/task-update/<str:pk>/',
-		'Delete':'/task-delete/<str:pk>/',
+		'Register':{'url': 'cms/register', 'method':'POST'},
+		'Login':{'url': 'cms/login', 'method':'POST'},
+		'Create Content':{'url': 'cms/create_content', 'method':'POST'},
+		'Update Content':{'url': 'cms/edit_content/<str:pk>', 'method':'POST'},
+		'View Content':{'url': 'cms/view_content/<str:pk>', 'method':'GET'},
+		'Delete Content':{'url': 'cms/delete_content/<str:pk>', 'method':'DELETE'},
+		'Search Content':{'url': 'cms/search_content?quere=<str:query>', 'method':'GET'},
 		}
 
 	return Response(api_urls)

@@ -11,6 +11,7 @@ Built API for Content Management System
   - [Database Setup](#database-setup)
 - [Running the Application](#running-the-application)
 - [Run Using Docker](#run-using-docker)
+- [Using Postman](#postman)
 - [Fixtures and Seeding](#fixtures-and-seeding)
 - [Running Tests](#running-tests)
 - [Code Coverage](#code-coverage)
@@ -132,6 +133,8 @@ To stop the development server, press `Ctrl + C` in the terminal.
 
 [Include any additional instructions or information related to running your specific Django application.]
 
+## Using Postman
+- Attached Postman collections file in the project. [CMS.postman_collection.json](./CMS.postman_collection.json). Can use for testing purpose.
 
 ## Run Using Docker
 We Also build a Docker image for this application also added the [docker file](./Dockerfile) in this repository. [click here](https://hub.docker.com/repository/docker/sunnybhagwat/arcitech-cms) to see repository.
